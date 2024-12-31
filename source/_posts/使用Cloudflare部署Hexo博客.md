@@ -5,7 +5,7 @@ date: '2024-11-08T05:12:32+08:00'
 tags:
 - Hexo
 title: 使用Cloudflare部署Hexo博客
-updated: '2024-12-31T22:36:59.964+08:00'
+updated: '2024-12-31T23:13:07.342+08:00'
 ---
 ## 开始前，请保持一个良好的网络环境
 
@@ -73,7 +73,6 @@ wget https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/tags/v1.9.8.zip
 
 ![](https://kaocdn.us.kg/image/Ep01/09.jpeg)
 
-
 ```bash
 unzip v1.9.8.zip
 ```
@@ -106,7 +105,7 @@ hexo clean
 
 #### 生成静态文件：
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/14.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/13.jpeg)
 
 ```bash
 hexo generate
@@ -115,7 +114,7 @@ hexo generate
 
 #### 启动本地服务器并预览
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/15.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/14.jpeg)
 
 ```bash
 hexo server
@@ -130,7 +129,7 @@ hexo server
 
 #### 安装Hexo部署插件：
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/16.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/15.jpeg)
 
 ```bash
 npm install hexo-deployer-git --save
@@ -138,7 +137,7 @@ npm install hexo-deployer-git --save
 
 #### 配置Hexo部署信息，在 `_config.yml`文件中的规范写法：
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/17.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/16.jpeg)
 
 ```yaml
 deploy:
