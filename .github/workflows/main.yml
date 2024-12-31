@@ -1,50 +1,39 @@
-name: 自动部署 Hexo
+name: 自动检测更新并部署 Hexo
 
 on:
   push:
     branches:
-      - main
+      - main # 监控 main 分支的更新
+  workflow_dispatch: # 手动触发工作流
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10.x]
 
     steps:
-      - name: 开始运行
-        uses: actions/checkout@v1
+      - name: 检出代码
+        uses: actions/checkout@v3
 
-      - name: 设置 Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16.x
 
-      - name: 安装 Hexo CI
-        run: 
-          export TZ='Asia/Shanghai'
-          npm install hexo-cli -g
+      - name: 安装 Hexo CLI
+        run: npm install hexo-cli -g
 
-      - name: 缓存
-        uses: actions/cache@v1
-        id: cache-dependencies
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-      - name: 安装插件
-        if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: 
+      - name: 初始化 Hexo 博客
+        run: |
+          if [ ! -d "blog" ]; then
+            hexo init blog
+          fi
+          cd blog
           npm install
+          npm install hexo-deployer-git --save
 
-      - name: 部署博客
-        run: 
-          hexo clean && hexo g && hexo douban && gulp
-          cd ./public
-          git init
-          git config user.name "${{secrets.GIT_NAME}}"
-          git config user.email "${{secrets.GIT_EMAIL}}"
-          git add .
-          git commit -m "Update"
-          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" main:main
+      - name: 部署 Hexo 博客
+        run: |
+          cd blog
+          hexo clean
+          hexo generate
+          hexo deploy
