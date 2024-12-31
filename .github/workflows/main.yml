@@ -3,8 +3,8 @@ name: 自动检测更新并部署 Hexo
 on:
   push:
     branches:
-      - main # 监控 main 分支的更新
-  workflow_dispatch: # 手动触发工作流
+      - main  # 监控 main 分支的更新
+  workflow_dispatch:  # 手动触发工作流
 
 jobs:
   deploy:
@@ -17,23 +17,25 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 16.x  # 使用 Node.js 16.x 版本
 
-      - name: 安装 Hexo CLI
-        run: npm install hexo-cli -g
+      - name: 安装指定版本的 npm
+        run: |
+          npm install -g npm@10.9.0  # 安装 npm@10.9.0
+          npm --version  # 输出 npm 版本确认安装成功
 
       - name: 初始化 Hexo 博客
         run: |
           if [ ! -d "blog" ]; then
-            hexo init blog
+            hexo init blog  # 如果 blog 文件夹不存在，初始化 Hexo 博客
           fi
           cd blog
-          npm install
-          npm install hexo-deployer-git --save
+          npm install  # 安装依赖
+          npm install hexo-deployer-git --save  # 安装部署插件
 
       - name: 部署 Hexo 博客
         run: |
           cd blog
-          hexo clean
-          hexo generate
-          hexo deploy
+          hexo clean  # 清理 Hexo 缓存
+          hexo generate  # 生成静态文件
+          hexo deploy  # 部署到 GitHub Pages
