@@ -157,7 +157,7 @@ deploy:
 
 #### 推送到GitHub：
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/18.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/17.jpeg)
 
 ```bash
 hexo deploy
@@ -166,7 +166,7 @@ hexo deploy
 
 ##### 刷新一下Github仓库,就可以看到push上去的东西了
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/19.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/18.jpeg)
 
 ### 使用免费容器进行部署
 
@@ -174,19 +174,19 @@ hexo deploy
 
 #### 创建Pages
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/20.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/19.jpeg)
 
 #### 用GitHub账户进行授权
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/21.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/20.jpeg)
 
 #### 选择你的GitHub仓库。
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/22.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/21.jpeg)
 
 #### 构建命令
 
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/23.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/22.jpeg)
 
 ```bash
 npm install -g hexo; hexo clean; hexo generate
@@ -194,13 +194,13 @@ npm install -g hexo; hexo clean; hexo generate
 
 其他的按预设就行了,可能要多部署几次
 如果访问CF给你分配的域名可以加载出来
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/24.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/23.jpeg)
 就成功了
 
 #### 绑定域名
 
 由于CF的 `pages.dev`在国内并不好用，所以要绑定自己的一个域名
-![](https://kaocdn.us.kg/https://raw.githubusercontent.com/kaoqy/img/refs/heads/main/25.jpeg)
+![](https://kaocdn.us.kg/image/Ep01/24.jpeg)
 点击自定义域(注⚠️:绑定的域名必须是已经在CF托管的)
 
 ### 总结
