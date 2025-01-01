@@ -24,3 +24,34 @@ updated: '2025-01-01T18:01:35.602+08:00'
 ### 第二步
 
 在Hexo源码仓库创建Workspaces
+
+### 第三步
+
+更新Node.js至最新版
+
+```bash
+npm install -g npm@latest
+```
+
+![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5020.jpeg)
+
+### 第四步
+
+安装Hexo
+
+```bash
+npm install -g hexo-cli
+```
+
+![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5022.jpeg)
+
+### 第五步
+
+安装推送插件，并修复
+
+```bash
+npm install hexo-deployer-git --save
+npm audit fix
+```
+
+![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5023.jpeg)
