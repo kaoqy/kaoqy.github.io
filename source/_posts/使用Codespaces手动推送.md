@@ -2,18 +2,18 @@
 abbrlink: ''
 categories:
 - - Hexo
-date: '2025-01-01T18:00:16.462601+08:00'
+date: ''
 tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-01T18:35:00.255+08:00'
+updated: '2025-01-01T21:24:52.747+08:00'
 ---
 使用Qexo修改后，并不会推送静态文件
 
 于是我搞了一个简单的推送方法
 
-后面，再慢慢搞全自动Action
+正在搞全自动Action
 
 ### 第一步
 
