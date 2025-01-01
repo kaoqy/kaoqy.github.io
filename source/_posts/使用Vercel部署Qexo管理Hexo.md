@@ -48,3 +48,5 @@ MYSQL_USER | MySQL数据库用户名 |
 MYSQL_NAME | MySQL数据库名 |
 MYSQL_PASSWORD | MySQL数据库密码 |
 ```
+
+点击Deploy
