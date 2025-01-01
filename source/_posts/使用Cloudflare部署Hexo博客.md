@@ -8,7 +8,7 @@ tags:
 - Cloudflare
 - Github
 title: 使用Cloudflare部署Hexo博客
-updated: '2025-01-01T16:55:52.692+08:00'
+updated: '2025-01-01T18:00:47.062+08:00'
 ---
 ## 开始前，请保持一个良好的网络环境
 
@@ -32,7 +32,7 @@ updated: '2025-01-01T16:55:52.692+08:00'
 ![](https://kaocdn.us.kg/image/Ep01/04.jpeg)
 
 ```bash
-npm install -g npm@10.9.0
+npm install -g npm@latest
 ```
 
 ### 安装Hexo
