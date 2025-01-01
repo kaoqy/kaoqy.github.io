@@ -1,11 +1,14 @@
 ---
 abbrlink: ''
-categories: []
+categories:
+- - Hexo
 date: '2024-11-08T05:12:32+08:00'
 tags:
 - Hexo
+- Cloudflare
+- Github
 title: 使用Cloudflare部署Hexo博客
-updated: '2024-12-31T23:13:07.342+08:00'
+updated: '2025-01-01T16:55:52.692+08:00'
 ---
 ## 开始前，请保持一个良好的网络环境
 
