@@ -7,7 +7,7 @@ tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-01T18:23:18.223+08:00'
+updated: '2025-01-01T18:35:00.255+08:00'
 ---
 使用Qexo修改后，并不会推送静态文件
 
