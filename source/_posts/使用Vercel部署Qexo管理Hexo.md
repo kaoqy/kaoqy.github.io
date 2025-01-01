@@ -8,10 +8,6 @@ tags:
 title: 使用Vercel部署Qexo管理Hexo
 updated: '2025-01-01T17:03:18.093+08:00'
 ---
-# 一些链接
-
-- [TiDB数据库](https://tidbcloud.com) 用于Qexo连接
-
 # 前端部署
 
 ## fork项目
@@ -20,4 +16,6 @@ updated: '2025-01-01T17:03:18.093+08:00'
 将此项目fork到自己仓库
 
 ## 创建数据库
+
+[TiDB数据库](https://tidbcloud.com) 用于Qexo连接
 
