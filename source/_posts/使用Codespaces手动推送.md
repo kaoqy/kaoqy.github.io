@@ -55,3 +55,11 @@ npm audit fix
 ```
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5023.jpeg)
+
+### 第五步
+
+输入推送命令将静态文件推送至Github仓库
+
+```bash
+hexo d
+```
