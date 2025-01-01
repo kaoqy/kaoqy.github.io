@@ -3,8 +3,8 @@ abbrlink: ''
 categories: []
 date: '2025-01-01T18:00:16.462601+08:00'
 tags: []
-title: title
-updated: '2025-01-01T18:01:35.602+08:00'
+title: 使用Codespaces手动推送
+updated: '2025-01-01T18:23:18.223+08:00'
 ---
 使用Qexo修改后，并不会推送静态文件
 
