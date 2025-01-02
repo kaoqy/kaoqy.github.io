@@ -7,7 +7,7 @@ tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-01T21:24:52.747+08:00'
+updated: '2025-01-02T20:55:15.379+08:00'
 ---
 使用Qexo修改后，并不会推送静态文件
 
@@ -66,3 +66,5 @@ npm audit fix
 ```bash
 hexo d
 ```
+
+如果可以帮我写一个Actions，可以与我联系me@kamail.us.kg
