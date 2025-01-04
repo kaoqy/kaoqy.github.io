@@ -7,7 +7,7 @@ tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-04T15:19:58.005+08:00'
+updated: '2025-01-04T15:49:30.826+08:00'
 ---
 # 第一步
 
@@ -22,7 +22,7 @@ updated: '2025-01-04T15:19:58.005+08:00'
 
 ## 执行一键脚本（与手动推送选其一）
 
-```
+```bash
 curl -sSL https://kaocdn.us.kg/qexo.sh | bash
 ```
 
