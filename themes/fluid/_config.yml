@@ -390,7 +390,7 @@ search:
   # 搜索的范围
   # Search field
   # Options: post | page | all
-  field: post
+  field: all
 
   # 搜索是否扫描正文
   # If true, search will scan the post content
