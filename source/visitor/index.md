@@ -1,10 +1,10 @@
 ---
 date: '2025-01-04T13:29:29.405551+08:00'
-title: title
+title: 访客统计
 updated: '2025-01-04T13:29:30.770+08:00'
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
