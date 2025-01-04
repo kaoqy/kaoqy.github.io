@@ -7,7 +7,7 @@ tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-02T20:55:15.379+08:00'
+updated: '2025-01-04T15:19:58.005+08:00'
 ---
 使用Qexo修改后，并不会推送静态文件
 
@@ -15,7 +15,7 @@ updated: '2025-01-02T20:55:15.379+08:00'
 
 正在搞全自动Action
 
-### 第一步
+# 第一步
 
 检查Hexo源码仓库的 `_config.yml`是否配置 `PAT`密钥 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5019.jpeg)
 
@@ -24,11 +24,19 @@ updated: '2025-01-02T20:55:15.379+08:00'
 添加PAT 如https://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@github.com/username/name
 ```
 
-### 第二步
+## 执行一键脚本（与手动推送选其一）
+
+```
+curl -sSL https://kaocdn.us.kg/qexo.sh | bash
+```
+
+## 手动推送
+
+### 第一步
 
 在Hexo源码仓库创建Workspaces
 
-### 第三步
+### 第二步
 
 更新Node.js至最新版
 
@@ -38,7 +46,7 @@ npm install -g npm@latest
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5020.jpeg)
 
-### 第四步
+### 第三步
 
 安装Hexo
 
@@ -48,7 +56,7 @@ npm install -g hexo-cli
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5022.jpeg)
 
-### 第五步
+### 第四步
 
 安装推送插件，并修复
 
