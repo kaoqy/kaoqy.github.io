@@ -18,6 +18,8 @@ updated: '2025-01-04T15:19:58.005+08:00'
 添加PAT 如https://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@github.com/username/name
 ```
 
+# 第二步
+
 ## 执行一键脚本（与手动推送选其一）
 
 ```
