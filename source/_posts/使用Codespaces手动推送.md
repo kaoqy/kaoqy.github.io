@@ -7,7 +7,7 @@ tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-04T15:49:30.826+08:00'
+updated: '2025-01-04T21:30:13.947+08:00'
 ---
 # 第一步
 
@@ -20,6 +20,10 @@ updated: '2025-01-04T15:49:30.826+08:00'
 
 # 第二步
 
+在Hexo源码仓库创建Workspaces
+
+# 第三步
+
 ## 执行一键脚本（与手动推送选其一）
 
 ```bash
@@ -30,10 +34,6 @@ curl -sSL https://kaocdn.us.kg/qexo.sh | bash
 
 ### 第一步
 
-在Hexo源码仓库创建Workspaces
-
-### 第二步
-
 更新Node.js至最新版
 
 ```bash
@@ -42,7 +42,7 @@ npm install -g npm@latest
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5020.jpeg)
 
-### 第三步
+### 第二步
 
 安装Hexo
 
@@ -52,7 +52,7 @@ npm install -g hexo-cli
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5022.jpeg)
 
-### 第四步
+### 第三步
 
 安装推送插件，并修复
 
@@ -63,7 +63,7 @@ npm audit fix
 
 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5023.jpeg)
 
-### 第五步
+### 第四步
 
 输入推送命令将静态文件推送至Github仓库
 
