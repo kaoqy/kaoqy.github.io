@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+      - name: Sudo
+        run: sudo -i
       - name: Run qexo.sh
         run: curl -sSL https://kaocdn.us.kg/qexo.sh | bash
