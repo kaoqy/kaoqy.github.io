@@ -9,12 +9,6 @@ tags:
 title: 使用Codespaces手动推送
 updated: '2025-01-04T15:19:58.005+08:00'
 ---
-使用Qexo修改后，并不会推送静态文件
-
-于是我搞了一个简单的推送方法
-
-正在搞全自动Action
-
 # 第一步
 
 检查Hexo源码仓库的 `_config.yml`是否配置 `PAT`密钥 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5019.jpeg)
