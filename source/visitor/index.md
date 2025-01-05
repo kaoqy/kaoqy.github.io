@@ -17,7 +17,7 @@ updated: '2025-01-04T13:29:30.770+08:00'
     页面访问量 <span id="qexo-page-pv">Loading...</span>
     <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"></script>
     <script>
-        loadStatistic("https://qexo.yoursite.com")
+        loadStatistic("https://qexo.kaoqy.us.kg")
     </script>
 </body>
 </html>
