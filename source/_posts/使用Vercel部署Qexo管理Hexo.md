@@ -40,6 +40,9 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 ## 开始推送
 
+```bash
+git add *
+```
 
 # 前端部署
 
