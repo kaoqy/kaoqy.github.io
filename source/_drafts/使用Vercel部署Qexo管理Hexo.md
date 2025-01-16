@@ -32,7 +32,9 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 ### 添加 `SSH key`
 
-打开
+打开[SSH and GPG keys](https://github.com/settings/keys)
+
+粘贴刚刚 `id_rsa`里的内容
 
 ## 配置前置
 
