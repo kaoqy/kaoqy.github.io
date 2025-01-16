@@ -24,7 +24,12 @@ ssh-keygen -t rsa -C "你的邮箱"
 /workspaces/Hexo/id_rsa
 ```
 
+并且按两次回车
+
 这里的 `Hexo`为你的项目名
+
+![](https://kaocdn.us.kg/image/Ep02/IMG_5081.jpeg)
+
 
 ## 配置前置
 
