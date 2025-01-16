@@ -38,7 +38,8 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 ![](https://kaocdn.us.kg/image/Ep02/IMG_5083.jpeg)
 
-## 配置前置
+## 开始推送
+
 
 # 前端部署
 
