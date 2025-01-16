@@ -6,7 +6,7 @@ date: '2025-01-01T12:23:16.664638+08:00'
 tags:
 - Hexo
 title: 使用Vercel部署Qexo管理Hexo
-updated: '2025-01-16T22:15:59.625+08:00'
+updated: '2025-01-16T22:38:08.292+08:00'
 ---
 # 推送源码
 
@@ -30,6 +30,13 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 ![](https://kaocdn.us.kg/image/Ep02/IMG_5081.jpeg)
 
+### 添加 `SSH key`
+
+打开[SSH and GPG keys](https://github.com/settings/keys)
+
+粘贴刚刚 `id_rsa`里的内容并保存
+
+![](https://kaocdn.us.kg/image/Ep02/IMG_5083.jpeg)
 
 ## 配置前置
 
