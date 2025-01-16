@@ -36,6 +36,8 @@ ssh-keygen -t rsa -C "你的邮箱"
 
 粘贴刚刚 `id_rsa`里的内容
 
+![](https://kaocdn.us.kg/image/Ep02/IMG_5083.jpeg)
+
 ## 配置前置
 
 # 前端部署
