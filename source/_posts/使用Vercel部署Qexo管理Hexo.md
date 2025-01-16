@@ -6,9 +6,30 @@ date: '2025-01-01T12:23:16.664638+08:00'
 tags:
 - Hexo
 title: 使用Vercel部署Qexo管理Hexo
-updated: '2025-01-02T20:59:47.958+08:00'
+updated: '2025-01-16T22:15:59.625+08:00'
 ---
 # 推送源码
+
+## 配置 `SSH Key`
+
+### 创建 `SSH Key`
+
+```bash
+ssh-keygen -t rsa -C "你的邮箱"
+```
+
+接着输入目录
+
+```bash
+/workspaces/Hexo/id_rsa
+```
+
+并且按两次回车
+
+这里的 `Hexo`为你的项目名
+
+![](https://kaocdn.us.kg/image/Ep02/IMG_5081.jpeg)
+
 
 ## 配置前置
 
