@@ -2,12 +2,12 @@
 abbrlink: ''
 categories:
 - - Hexo
-date: ''
+date: '2025-01-01T14:47:54.634+08:00'
 tags:
 - Hexo
 - Github
 title: 使用Codespaces手动推送
-updated: '2025-01-04T21:30:13.947+08:00'
+updated: '2025-01-01T14:47:54.634+08:00'
 ---
 # 第一步
 
