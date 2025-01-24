@@ -1,8 +1,10 @@
 ---
 abbrlink: ''
-categories: []
+categories:
+- - Mail
 date: '2025-01-24T09:47:49.444262+08:00'
-tags: []
+tags:
+- Mail
 title: Temp Mail
 updated: '2025-01-24T15:12:18.093+08:00'
 ---
@@ -35,3 +37,13 @@ updated: '2025-01-24T15:12:18.093+08:00'
 ## 发送邮件
 
 点击 `发件箱`
+
+首先需要申请权限
+![](https://kaocdn.us.kg/image/25/1/IMG_5273.jpeg)
+
+默认有可以发送5封邮件
+![](https://kaocdn.us.kg/image/25/1/IMG_5274.jpeg)
+
+此时就可以成功发送了
+
+![](https://kaocdn.us.kg/image/25/1/IMG_5275.jpeg)
