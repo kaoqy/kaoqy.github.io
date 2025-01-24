@@ -6,4 +6,4 @@ tags: []
 title: Temp Mail
 updated: '2025-01-24T14:32:15.466+08:00'
 ---
-[kaoqy’s mail](mail.kaoqy.me)
+[kaoqy’s mail](https://mail.kaoqy.me)
