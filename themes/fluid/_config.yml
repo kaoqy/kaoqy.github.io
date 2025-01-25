@@ -379,7 +379,8 @@ navbar:
         submenu: [
          { key: "说说", link: "/talks/", icon: /img/shuoshuo.png },
          { key: "访客记录", link: "/visitor/", icon: /img/fangketongji.png },
-         { key: "必应壁纸", link: "/biying/", icon: /img/bizhi.png }
+         { key: "必应壁纸", link: "/biying/", icon: /img/bizhi.png },
+         { key: "表白墙", link: "/love/", icon: /img/love.png }
         ]
       }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
