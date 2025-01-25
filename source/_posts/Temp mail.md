@@ -6,7 +6,7 @@ date: '2025-01-24T09:47:49.444262+08:00'
 tags:
 - Mail
 title: Temp Mail邮箱使用教程
-index_img: /img/article/tempmail
+index_img: /img/article/tempmail.png
 updated: '2025-01-24T18:34:12.396+08:00'
 ---
 # Temp Mail使用教程
