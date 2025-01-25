@@ -319,7 +319,7 @@ canonical:
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
 lazyload:
-  enable: true
+  enable: false
 
   # 加载时的占位图片
   # The placeholder image when loading
@@ -377,7 +377,7 @@ navbar:
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
 search:
-  enable: true
+  enable: false
 
   # 搜索索引文件的路径，可以是相对路径或外站的绝对路径
   # Path for search index file, it can be a relative path or an absolute path
@@ -482,7 +482,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://kaocdn.us.kg/image/index.jpg
+  banner_img: https://cn-nb1.rains3.com/image/home.png
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
