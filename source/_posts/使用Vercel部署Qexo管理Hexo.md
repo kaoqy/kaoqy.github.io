@@ -6,6 +6,7 @@ date: '2025-01-01T12:23:16.664638+08:00'
 tags:
 - Hexo
 title: 使用Vercel部署Qexo管理Hexo
+index_img: http://image.kaoqy.me/article/vercel-qexo.jpeg
 updated: '2025-01-16T22:38:08.292+08:00'
 ---
 # 推送源码
