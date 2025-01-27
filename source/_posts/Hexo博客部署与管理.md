@@ -48,3 +48,9 @@ hexo init blog
 ```
 
 ![](https://image.kaoqy.me/25/1/IMG_5314.jpeg)
+
+## 安装主题
+
+下载Hexo Fliud主题 - [下载链接](https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/heads/master.zip)
+
+将下载下来的压缩包解压的 `themes`文件夹中
