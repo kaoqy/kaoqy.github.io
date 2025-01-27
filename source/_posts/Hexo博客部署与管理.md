@@ -6,6 +6,7 @@ date: '2025-01-27T14:25:01.155212+08:00'
 tags:
 - Hexo
 title: Hexo博客部署与管理
+index_img: https://image.kaoqy.me/25/1/IMG_5283.png
 updated: '2025-01-27T14:44:26.328+08:00'
 ---
 # 安装环境
