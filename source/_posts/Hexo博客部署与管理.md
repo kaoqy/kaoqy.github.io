@@ -54,3 +54,22 @@ hexo init blog
 下载Hexo Fliud主题 - [下载链接](https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/heads/master.zip)
 
 将下载下来的压缩包解压的 `themes`文件夹中
+
+
+![](https://image.kaoqy.me/25/1/IMG_5316.jpeg)
+
+并将解压出来的文件夹重命名为 `fliud`
+
+接着修改 `blog`目录中的 `config.yml`文件
+
+```yaml
+theme: fluid  # 指定主题
+
+language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
+```
+
+# 推送源码
+
+## 创建存储库
+
+名称为 `Hexo`选择 `Private` ![](https://image.kaoqy.me/25/1/IMG_5318.jpeg)
