@@ -18,7 +18,7 @@ updated: '2025-01-27T14:44:26.328+08:00'
 
 选择 `64-bit Git for Windows Setup`
 
-##Nodejs
+## Nodejs
 
 一路下一步即可
 
@@ -31,6 +31,8 @@ updated: '2025-01-27T14:44:26.328+08:00'
 也是一路下一步即可
 
 # 本地部署
+
+## 安装Hexo
 
 找一个文件夹打开终端执行
 
@@ -128,4 +130,8 @@ git remote add origin https://github.com/kaoquanyang123/Hexo.git
 git pull --rebase origin main
 ```
 
-接着
+接着执行
+
+```bat
+git push -u origin main
+```
