@@ -94,3 +94,38 @@ ssh-keygen -t rsa -C "你的邮箱"
 打开[SSH and GPG keys](https://github.com/settings/keys)
 
 粘贴刚刚 `id_rsa.pub`里的内容并保存 ![](https://image.kaoqy.me/25/1/IMG_5321.jpeg)
+
+## 本地创建存储库
+
+```bat
+git init
+git add . 
+```
+
+![](https://image.kaoqy.me/25/1/IMG_5322.jpeg)
+
+我这里出现了报错，不过执行下面命令的时候，发现添加成功了
+
+可以使用
+
+```bat
+git status
+```
+
+查看是否添加成功
+
+## 推送至远程仓库
+
+```bat
+git remote add origin https://github.com/kaoquanyang123/Hexo.git
+```
+
+如果你在创建仓库时勾选创建了 `README.md`
+
+那么你需要执行
+
+```bat
+git pull --rebase origin main
+```
+
+接着
