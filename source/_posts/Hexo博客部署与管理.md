@@ -73,3 +73,24 @@ language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 ## 创建存储库
 
 名称为 `Hexo`选择 `Private` ![](https://image.kaoqy.me/25/1/IMG_5318.jpeg)
+
+## 添加 `SSH Key`
+
+回到 `CMD`
+
+执行命令，注意要改成你注册Github的邮箱
+
+并且按两次回车
+
+```bat
+ssh-keygen -t rsa -C "你的邮箱"
+```
+
+![](https://image.kaoqy.me/25/1/IMG_5319.jpeg)
+
+打开以下目录，复制 `id_rsa.pub`中的内容
+![](https://image.kaoqy.me/25/1/IMG_5320.jpeg)
+
+打开[SSH and GPG keys](https://github.com/settings/keys)
+
+粘贴刚刚 `id_rsa.pub`里的内容并保存 ![](https://image.kaoqy.me/25/1/IMG_5321.jpeg)
