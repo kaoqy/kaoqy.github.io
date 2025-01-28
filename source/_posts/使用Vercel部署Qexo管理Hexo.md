@@ -58,13 +58,13 @@ git add *
 
 [TiDB数据库](https://tidbcloud.com) 用于Qexo连接
 
-![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5013.jpeg)
+![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5013.jpeg)
 
 选择Serverless，有免费的5GB存储
 
 ### 修改数据库
 
-点击右上角Connnet并点击Generate Password创建密码 ![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5016.jpeg)
+点击右上角Connnet并点击Generate Password创建密码 ![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5016.jpeg)
 
 会获得下图的信息，备用
 
@@ -76,7 +76,7 @@ git add *
 
 添加5个环境变量(对应的是上图的信息)
 
-![](https://raw.githubusercontent.com/kaoqy/Image/refs/heads/main/25/1/IMG_5015.jpeg)
+![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5015.jpeg)
 
 ```json
 MYSQL_HOST | MySQL数据库连接地址 |
