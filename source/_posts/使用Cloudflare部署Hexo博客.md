@@ -24,13 +24,13 @@ updated: '2025-01-01T18:00:47.062+08:00'
 
 ### 创建新仓库
 
-![](https://kaocdn.us.kg/image/Ep01/01.jpeg)
+![](https://cdn4.kaoqy.me/24/12/01.jpeg)
 点击Code并开启codespaces(注⚠️:需要等一会)
-![](https://kaocdn.us.kg/image/Ep01/02.jpeg)
+![](https://cdn4.kaoqy.me/24/12/02.jpeg)
 
 ### 更新Node.js
 
-![](https://kaocdn.us.kg/image/Ep01/04.jpeg)
+![](https://cdn4.kaoqy.me/24/12/04.jpeg)
 
 ```bash
 npm install -g npm@latest
@@ -40,7 +40,7 @@ npm install -g npm@latest
 
 #### 下载Hexo
 
-![](https://kaocdn.us.kg/image/Ep01/05.jpeg)
+![](https://cdn4.kaoqy.me/24/12/05.jpeg)
 
 ```bash
 npm install -g hexo-cli
