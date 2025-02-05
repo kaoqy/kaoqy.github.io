@@ -48,7 +48,7 @@ npm install -g hexo-cli
 
 #### 初始化
 
-![](https://kaocdn.us.kg/image/Ep01/06.jpeg)
+![](https://cdn4.kaoqy.me/24/12/06.jpeg)
 
 ```bash
 hexo init blog
@@ -56,7 +56,7 @@ hexo init blog
 
 #### 进入目录并安装依赖
 
-![](https://kaocdn.us.kg/image/Ep01/07.jpeg)
+![](https://cdn4.kaoqy.me/24/12/07.jpeg)
 
 ```bash
 cd blog
@@ -66,7 +66,7 @@ npm install
 #### 选择并安装主题(注⚠️:这里的 `v1.9.8`要改成最新的版本号)
 
 选择一个Hexo主题，例如 Fliud。
-![](https://kaocdn.us.kg/image/Ep01/08.jpeg)
+![](https://cdn4.kaoqy.me/24/12/08.jpeg)
 
 ```bash
 cd themes
@@ -75,7 +75,7 @@ wget https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/tags/v1.9.8.zip
 
 #### 解压
 
-![](https://kaocdn.us.kg/image/Ep01/09.jpeg)
+![](https://cdn4.kaoqy.me/24/12/09.jpeg)
 
 ```bash
 unzip v1.9.8.zip
@@ -83,7 +83,7 @@ unzip v1.9.8.zip
 
 #### 重命名
 
-![](https://kaocdn.us.kg/image/Ep01/10.jpeg)
+![](https://cdn4.kaoqy.me/24/12/10.jpeg)
 
 ```bash
 mv hexo-theme-fluid-1.9.8 fluid
@@ -91,7 +91,7 @@ mv hexo-theme-fluid-1.9.8 fluid
 
 #### 配置主题
 
-![](https://kaocdn.us.kg/image/Ep01/11.jpeg)
+![](https://cdn4.kaoqy.me/24/12/11.jpeg)
 修改Hexo根目录的 `_config.yml`，如
 
 ```yaml
@@ -100,7 +100,7 @@ theme: fluid
 
 ### 本地生成和预览
 
-![](https://kaocdn.us.kg/image/Ep01/12.jpeg)
+![](https://cdn4.kaoqy.me/24/12/12.jpeg)
 
 ```bash
 hexo clean
@@ -109,7 +109,7 @@ hexo clean
 
 #### 生成静态文件：
 
-![](https://kaocdn.us.kg/image/Ep01/13.jpeg)
+![](https://cdn4.kaoqy.me/24/12/13.jpeg)
 
 ```bash
 hexo generate
@@ -118,7 +118,7 @@ hexo generate
 
 #### 启动本地服务器并预览
 
-![](https://kaocdn.us.kg/image/Ep01/14.jpeg)
+![](https://cdn4.kaoqy.me/24/12/14.jpeg)
 
 ```bash
 hexo server
@@ -133,7 +133,7 @@ hexo server
 
 #### 安装Hexo部署插件：
 
-![](https://kaocdn.us.kg/image/Ep01/15.jpeg)
+![](https://cdn4.kaoqy.me/24/12/15.jpeg)
 
 ```bash
 npm install hexo-deployer-git --save
@@ -141,7 +141,7 @@ npm install hexo-deployer-git --save
 
 #### 配置Hexo部署信息，在 `_config.yml`文件中的规范写法：
 
-![](https://kaocdn.us.kg/image/Ep01/16.jpeg)
+![](https://cdn4.kaoqy.me/24/12/16.jpeg)
 
 ```yaml
 deploy:
@@ -161,7 +161,7 @@ deploy:
 
 #### 推送到GitHub：
 
-![](https://kaocdn.us.kg/image/Ep01/17.jpeg)
+![](https://cdn4.kaoqy.me/24/12/17.jpeg)
 
 ```bash
 hexo deploy
@@ -170,7 +170,7 @@ hexo deploy
 
 ##### 刷新一下Github仓库,就可以看到push上去的东西了
 
-![](https://kaocdn.us.kg/image/Ep01/18.jpeg)
+![](https://cdn4.kaoqy.me/24/12/18.jpeg)
 
 ### 使用免费容器进行部署
 
@@ -178,19 +178,19 @@ hexo deploy
 
 #### 创建Pages
 
-![](https://kaocdn.us.kg/image/Ep01/19.jpeg)
+![](https://cdn4.kaoqy.me/24/12/19.jpeg)
 
 #### 用GitHub账户进行授权
 
-![](https://kaocdn.us.kg/image/Ep01/20.jpeg)
+![](https://cdn4.kaoqy.me/24/12/20.jpeg)
 
 #### 选择你的GitHub仓库。
 
-![](https://kaocdn.us.kg/image/Ep01/21.jpeg)
+![](https://cdn4.kaoqy.me/24/12/21.jpeg)
 
 #### 构建命令
 
-![](https://kaocdn.us.kg/image/Ep01/22.jpeg)
+![](https://cdn4.kaoqy.me/24/12/22.jpeg)
 
 ```bash
 npm install -g hexo; hexo clean; hexo generate
@@ -198,13 +198,13 @@ npm install -g hexo; hexo clean; hexo generate
 
 其他的按预设就行了,可能要多部署几次
 如果访问CF给你分配的域名可以加载出来
-![](https://kaocdn.us.kg/image/Ep01/23.jpeg)
+![](https://cdn4.kaoqy.me/24/12/23.jpeg)
 就成功了
 
 #### 绑定域名
 
 由于CF的 `pages.dev`在国内并不好用，所以要绑定自己的一个域名
-![](https://kaocdn.us.kg/image/Ep01/24.jpeg)
+![](https://cdn4.kaoqy.me/24/12/24.jpeg)
 点击自定义域(注⚠️:绑定的域名必须是已经在CF托管的)
 
 ### 总结
