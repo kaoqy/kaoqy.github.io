@@ -17,7 +17,7 @@ updated: '2025-01-24T18:34:12.396+08:00'
 
 输入你的邮箱，点击 `发送验证码` (注：只有 `kaoqy.me`支持发件)
 
-![](https://kaocdn.us.kg/image/25/1/IMG_5267.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5267.jpeg)
 
 如果没有邮件请检查 `垃圾邮件`
 
@@ -27,24 +27,24 @@ updated: '2025-01-24T18:34:12.396+08:00'
 
 可以点击 `生成随机名字`
 
-![](https://kaocdn.us.kg/image/25/1/IMG_5269.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5269.jpeg)
 
 ## 收取邮件
 
 很简单，只要用这个邮箱地址，在 `收件箱`中就可以看见邮件
 
-![](https://kaocdn.us.kg/image/25/1/IMG_5271.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5271.jpeg)
 
 ## 发送邮件
 
 点击 `发件箱`
 
 首先需要申请权限
-![](https://kaocdn.us.kg/image/25/1/IMG_5273.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5273.jpeg)
 
 默认有可以发送5封邮件
-![](https://kaocdn.us.kg/image/25/1/IMG_5274.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5274.jpeg)
 
 此时就可以成功发送了
 
-![](https://kaocdn.us.kg/image/25/1/IMG_5275.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5275.jpeg)
