@@ -15,7 +15,7 @@ updated: '2025-01-27T14:44:26.328+08:00'
 
 [Git - Download for Windows](https://git-scm.com/downloads/win)
 
-![](https://image.kaoqy.me/25/1/IMG_5311.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5311.jpeg)
 
 选择 `64-bit Git for Windows Setup`
 
@@ -25,7 +25,7 @@ updated: '2025-01-27T14:44:26.328+08:00'
 
 [Node.js - Download Node.js](https://nodejs.org/zh-cn/download/)
 
-![](https://image.kaoqy.me/25/1/IMG_5312.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5312.jpeg)
 
 选择 `Windows Installer (.msi)`
 
@@ -41,7 +41,7 @@ updated: '2025-01-27T14:44:26.328+08:00'
 npm install -g npm@latest
 ```
 
-![](https://image.kaoqy.me/25/1/IMG_5313.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5313.jpeg)
 
 接着执行，会在本地生成blog目录，里面存放的就是Hexo源码
 
@@ -50,7 +50,7 @@ npm install -g hexo-cli
 hexo init blog
 ```
 
-![](https://image.kaoqy.me/25/1/IMG_5314.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5314.jpeg)
 
 ## 安装主题
 
@@ -59,7 +59,7 @@ hexo init blog
 将下载下来的压缩包解压的 `themes`文件夹中
 
 
-![](https://image.kaoqy.me/25/1/IMG_5316.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5316.jpeg)
 
 并将解压出来的文件夹重命名为 `fliud`
 
@@ -75,7 +75,7 @@ language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 
 ## 创建存储库
 
-名称为 `Hexo`选择 `Private` ![](https://image.kaoqy.me/25/1/IMG_5318.jpeg)
+名称为 `Hexo`选择 `Private` ![](https://cdn4.kaoqy.me/25/1/IMG_5318.jpeg)
 
 ## 添加 `SSH Key`
 
@@ -89,14 +89,14 @@ language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 ssh-keygen -t rsa -C "你的邮箱"
 ```
 
-![](https://image.kaoqy.me/25/1/IMG_5319.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5319.jpeg)
 
 打开以下目录，复制 `id_rsa.pub`中的内容
-![](https://image.kaoqy.me/25/1/IMG_5320.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5320.jpeg)
 
 打开[SSH and GPG keys](https://github.com/settings/keys)
 
-粘贴刚刚 `id_rsa.pub`里的内容并保存 ![](https://image.kaoqy.me/25/1/IMG_5321.jpeg)
+粘贴刚刚 `id_rsa.pub`里的内容并保存 ![](https://cdn4.kaoqy.me/25/1/IMG_5321.jpeg)
 
 ## 本地创建存储库
 
@@ -105,7 +105,7 @@ git init
 git add . 
 ```
 
-![](https://image.kaoqy.me/25/1/IMG_5322.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5322.jpeg)
 
 我这里出现了报错，不过执行下面命令的时候，发现添加成功了
 
@@ -150,13 +150,13 @@ git push -u origin main
 
 [TiDB数据库](https://tidbcloud.com) 用于Qexo连接
 
-![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5013.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5013.jpeg)
 
 选择Serverless，有免费的5GB存储
 
 ### 修改数据库
 
-点击右上角Connnet并点击Generate Password创建密码 ![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5016.jpeg)
+点击右上角Connnet并点击Generate Password创建密码 ![](https://cdn4.kaoqy.me/25/1/IMG_5016.jpeg)
 
 会获得下图的信息，备用
 
@@ -168,7 +168,7 @@ git push -u origin main
 
 添加5个环境变量(对应的是上图的信息)
 
-![](https://git.kaoqy.me/kaoqy/Image/main/25/1/IMG_5015.jpeg)
+![](https://cdn4.kaoqy.me/25/1/IMG_5015.jpeg)
 
 ```json
 MYSQL_HOST | MySQL数据库连接地址 |
