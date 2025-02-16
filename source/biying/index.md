@@ -4,139 +4,146 @@ title: 必应壁纸
 updated: '2025-02-07T21:25:11.000000+08:00'
 ---
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bing 每日一图</title>
+    <title>Bing 每日一图 - 瀑布流展示</title>
+    <link href="https://unpkg.com/masonry-layout@4/dist/masonry.min.css" rel="stylesheet">
     <style>
-        /* 全局样式 */
         body {
-            font-family: "Arial", sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
             padding: 0;
         }
-
-        h1 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 15px;
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
         }
-
-        /* 图片展示区域 */
-        .gallery {
+        .grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: auto;
-            padding: 10px;
+            gap: 40px; /* 增加间距 */
         }
-
-        /* 图片卡片 */
-        .image-card {
-            width: 30%;
-            background: linear-gradient(135deg, #ffffff, #f8f8f8);
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .grid-item {
+            width: 32%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
             overflow: hidden;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.5s forwards;
+            position: relative;
+            transition: transform 0.2s ease-in-out;
         }
-
-        .image-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        .grid-item:hover {
+            transform: translateY(-5px);
         }
-
-        /* 图片 */
-        .image-card img {
+        .grid-item img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            transition: opacity 0.3s ease-in-out;
+            cursor: pointer;
         }
-
-        /* 日期样式 */
-        .date {
+        .grid-item .info {
+            padding: 12px;
+            text-align: left;
+        }
+        .grid-item .info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .grid-item .info p {
+            color: #555;
             font-size: 14px;
-            color: #666;
-            margin-top: 8px;
+            white-space: pre-wrap; /* 让版权信息换行 */
+            line-height: 1.6; /* 增加行距 */
+        }
+        /* 日期栏 */
+        .date-container {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 15px;
+            font-size: 16px;
             font-weight: bold;
+            color: #555;
+            text-align: left;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        /* 响应式布局 */
-        @media (max-width: 768px) {
-            .image-card {
-                width: 45%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .image-card {
-                width: 100%;
-            }
-        }
-
-        /* 动画效果 */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* 复制提示框 */
+        .copy-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            display: none;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Bing 每日一图 - 瀑布流展示</h1>
+        <div class="grid" id="grid"></div>
+    </div>
 
-    <h1>Bing 每日一图</h1>
-    <div class="gallery" id="gallery"></div>
+    <!-- 复制成功提示 -->
+    <div id="copyToast" class="copy-toast">图片 URL 已复制！</div>
 
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script>
-        async function fetchBingImages() {
-            try {
-                const response = await fetch("https://bing.kaoqy.me/urls.txt", { cache: "no-store" });
-                if (!response.ok) throw new Error("无法获取图片数据");
-
-                const text = await response.text();
-                let images = text.trim().split("\n").map(line => {
-                    let [date, url] = line.split(" ");
-                    return { date, url };
-                });
-
-                // 按日期降序排列（最新的图片在最上方）
-                images.sort((a, b) => b.date.localeCompare(a.date));
-
-                const gallery = document.getElementById("gallery");
-                images.forEach((image, index) => {
-                    let card = document.createElement("div");
-                    card.className = "image-card";
-                    card.style.animationDelay = `${index * 0.1}s`; // 添加动画延迟
-
-                    card.innerHTML = `
-                        <img src="${image.url}" alt="Bing ${image.date}" loading="lazy">
-                        <div class="date">${image.date}</div>
+        // 从外部 URL 获取 JSON 数据
+        fetch('https://bing.kaoqy.me/data.json')
+            .then(response => response.json())
+            .then(data => {
+                // 渲染数据
+                const grid = document.getElementById('grid');
+                data.forEach(item => {
+                    const gridItem = document.createElement('div');
+                    gridItem.classList.add('grid-item');
+                    gridItem.innerHTML = `
+                        <div class="date-container">${item.date}</div>
+                        <img src="${item.image_url}" alt="${item.title}" onclick="copyImageUrl('${item.image_url}')">
+                        <div class="info">
+                            <h3>${item.title}</h3>
+                            <p>${item.copyright}</p>
+                        </div>
                     `;
-                    gallery.appendChild(card);
+                    grid.appendChild(gridItem);
                 });
 
-            } catch (error) {
-                console.error("获取图片数据失败", error);
-            }
+                // 初始化 Masonry 瀑布流布局
+                new Masonry(grid, {
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-item',
+                    percentPosition: true
+                });
+            })
+            .catch(error => {
+                console.error('获取数据失败:', error);
+                alert('无法加载数据！');
+            });
+
+        // 复制图片 URL 并显示提示框
+        function copyImageUrl(url) {
+            const tempInput = document.createElement('input');
+            document.body.appendChild(tempInput);
+            tempInput.value = url;
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // 显示复制成功提示
+            const toast = document.getElementById('copyToast');
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 2000);
         }
-
-        fetchBingImages();
     </script>
-
 </body>
 </html>
