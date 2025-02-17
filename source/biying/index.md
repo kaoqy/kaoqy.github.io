@@ -90,10 +90,8 @@ updated: '2025-02-07T21:25:11.000000+08:00'
         <h1>Bing 每日一图 - 瀑布流展示</h1>
         <div class="grid" id="grid"></div>
     </div>
-
     <!-- 复制成功提示 -->
     <div id="copyToast" class="copy-toast">图片 URL 已复制！</div>
-
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script>
         // 从外部 URL 获取 JSON 数据
@@ -115,7 +113,6 @@ updated: '2025-02-07T21:25:11.000000+08:00'
                     `;
                     grid.appendChild(gridItem);
                 });
-
                 // 初始化 Masonry 瀑布流布局
                 new Masonry(grid, {
                     itemSelector: '.grid-item',
@@ -127,7 +124,6 @@ updated: '2025-02-07T21:25:11.000000+08:00'
                 console.error('获取数据失败:', error);
                 alert('无法加载数据！');
             });
-
         // 复制图片 URL 并显示提示框
         function copyImageUrl(url) {
             const tempInput = document.createElement('input');
